@@ -1,5 +1,7 @@
 import React from "react";
 import Logo from "../assets/HomeImgs/LogoW.webp";
+import OnlyLogo from "../../public/OnlyLogo.webp";
+
 import { IoCall } from "react-icons/io5";
 import { MdCall, MdEmail } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
@@ -60,8 +62,9 @@ const contact = [
 
 const Footer = () => {
   return (
-    <section className="py-20 bg-primary text-white">
-      <div className="container mx-auto px-4">
+    <section className="relative py-20 bg-primary text-white overflow-hidden">
+      <img src={OnlyLogo} alt="" className="absolute -bottom-20 -right-40 opacity-10"/>
+      <div className="">
         <div className="flex flex-col lg:flex-row gap-8 container">
           {/* Column 1 */}
           <div className="w-full lg:w-4/12 space-y-6">

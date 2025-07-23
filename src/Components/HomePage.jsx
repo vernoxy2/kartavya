@@ -6,6 +6,7 @@ import Experience from "../Pages/Home/Experience";
 import WeServe from "../Pages/Home/WeServe";
 import Clients from "../Pages/Home/Clients";
 import ContactUs from "../SubComponents/ContactUs";
+import Delivering from "../Pages/Home/Delivering";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Products />
       <Experience />
       <WeServe />
+      <Delivering/>
       <Clients/>
       <ContactUs/>
     </div>

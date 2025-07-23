@@ -15,8 +15,8 @@ const Navbar = () => {
   const handleNavClick = () => setIsOpen(false);
 
   return (
-    <header className="w-full shadow-sm bg-white top-0 left-0 z-50">
-      <div className="container mx-auto px-4 py-3 grid grid-cols-12 items-center">
+    <header className="w-full shadow-sm bg-white top-0 left-0 z-50 ">
+      <div className="container mx-auto  py-3 grid grid-cols-12 items-center">
         {/* Logo */}
         <div className="col-span-6 md:col-span-3">
           <NavLink to="/" onClick={handleNavClick}>
