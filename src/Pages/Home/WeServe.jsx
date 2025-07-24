@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
-
-// React Slick CSS (Make sure these are included in your project)
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaCar, FaIndustry, FaRegHospital, FaTruck } from "react-icons/fa";
+import { BsShopWindow } from "react-icons/bs";
+import { ImLab, ImSpoonKnife } from "react-icons/im";
+import { IoHardwareChip } from "react-icons/io5";
 
 const ServeList = [
   {
     id: 1,
+    icon: <FaRegHospital />,
     name: "Pharmaceutical & Healthcare",
     description:
       "Labels that meet strict regulatory standards for medicines, lab samples, and medical packaging.",
@@ -19,6 +22,7 @@ const ServeList = [
   },
   {
     id: 2,
+    icon: <FaIndustry />,
     name: "Manufacturing & Industrial",
     description:
       "Reliable ribbons and labels for raw materials, machine parts, and finished goods.",
@@ -30,6 +34,7 @@ const ServeList = [
   },
   {
     id: 3,
+    icon: <BsShopWindow />,
     name: "Retail & Packaging",
     description:
       "Make your products shelf-ready with visually appealing and functional labeling.",
@@ -41,6 +46,7 @@ const ServeList = [
   },
   {
     id: 4,
+    icon: <FaTruck />,
     name: "Logistics & Transportation",
     description:
       "Durable labeling for tracking shipments, inventory, and packages under tough conditions.",
@@ -52,6 +58,7 @@ const ServeList = [
   },
   {
     id: 5,
+    icon: <ImSpoonKnife />,
     name: "Food & Beverage",
     description:
       "Labels that meet the demands of food safety and brand appeal for packaging.",
@@ -63,6 +70,7 @@ const ServeList = [
   },
   {
     id: 6,
+    icon: <FaCar />,
     name: "Automotive",
     description:
       "Parts identification, safety labels, and quality control tracking.",
@@ -74,6 +82,7 @@ const ServeList = [
   },
   {
     id: 7,
+    icon: <IoHardwareChip />,
     name: "Electronics",
     description: "Component labeling, serial numbers, and warranty tracking.",
     data: [
@@ -84,6 +93,7 @@ const ServeList = [
   },
   {
     id: 8,
+    icon: <ImLab />,
     name: "Oil & Chemical Industry",
     description:
       "Durable labels that withstand harsh environments, chemicals, and high temperatures.",
@@ -96,25 +106,25 @@ const ServeList = [
 ];
 
 const WeServe = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
+
   const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
+    centerMode: true,
+    centerPadding: "0px",
     slidesToShow: 3,
     slidesToScroll: 1,
+    beforeChange: (oldIndex, newIndex) => setActiveSlide(newIndex),
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
           slidesToShow: 1,
+          centerMode: false,
         },
       },
     ],
@@ -141,21 +151,42 @@ const WeServe = () => {
 
       <div className="container">
         <Slider {...settings} className="py-12 drop-shadow-2xl">
-          {ServeList.map((serve) => (
-            <div key={serve.id} className="px-2 gr">
-              <div className="h-full flex flex-col space-y-4 sm:space-y-5 justify-between items-center text-center border border-primary/30 rounded-xl p-6 shadow-md bg-white group-hover:bg-gradient-to-t from-primary/10 to-white">
-                <h2 className="text-xl md:text-2xl font-bold">{serve.name}</h2>
-                <p className="text-base md:text-lg text-gray-600">
-                  {serve.description}
-                </p>
-                <ul className="text-base md:text-lg list-disc list-inside text-left">
-                  {serve.data.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
+          {ServeList.map((serve, index) => {
+            // Check if this is the center slide
+            const isActive = index === activeSlide;
+
+            return (
+              <div key={serve.id} className="px-8 flex flex-col items-center">
+                <div
+                  className={`h-full mx-auto flex flex-col space-y-4 sm:space-y-5 justify-between items-center text-center border border-primary/30 rounded-2xl p-6 shadow-md transition-all duration-300 ease-in-out
+                    ${
+                      isActive
+                        ? "bg-gradient-to-b from-primary to-secondary text-white scale-100"
+                        : "bg-white text-black scale-100"
+                    }`}
+                >
+                  <div
+                    className={`text-5xl ${
+                      isActive ? "text-white" : "text-primary"
+                    }`}
+                  >
+                    {serve.icon}
+                  </div>
+                  <h2 className="text-xl md:text-2xl font-bold">
+                    {serve.name}
+                  </h2>
+                  <p className="text-base md:text-lg text-inherit">
+                    {serve.description}
+                  </p>
+                  <ul className="text-base md:text-lg list-disc list-inside text-left">
+                    {serve.data.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </Slider>
       </div>
     </section>

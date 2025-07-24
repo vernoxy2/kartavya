@@ -16,9 +16,9 @@ const HomePage = () => {
       <Products />
       <Experience />
       <WeServe />
-      <Delivering/>
-      <Clients/>
-      <ContactUs/>
+      <Delivering />
+      <Clients />
+      <ContactUs />
     </div>
   );
 };
