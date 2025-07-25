@@ -1,6 +1,6 @@
 import React from "react";
 import CommaBox from "../../SubComponents/CommaBox";
-import roll from "../../assets/AboutImgs/roll.webp";
+import roll from "../../assets/AboutImgs/Roll.webp";
 import Circle1 from "../../assets/AboutImgs/Circle1.webp";
 import Circle2 from "../../assets/AboutImgs/Circle2.webp";
 import Experience from "../../assets/AboutImgs/Experience.png";
@@ -13,7 +13,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 
 const Businesses = () => {
   return (
-    <section className="py-8 sm:py-12 space-y-8 md:space-y-20 relative overflow-hidden">
+    <section className="py-8 sm:py-14 space-y-8 md:space-y-20 relative overflow-hidden">
       <h1 className="text-primary font-extrabold text-4xl md:text-6xl text-center">
         Why Businesses Choose
       </h1>
