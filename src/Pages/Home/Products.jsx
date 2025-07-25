@@ -5,16 +5,16 @@ import Product3 from "../../assets/HomeImgs/Product3.webp";
 import PrimaryBtn from "../../SubComponents/PrimaryBtn";
 import { FaCheckCircle } from "react-icons/fa";
 import SaidHeading from "../../SubComponents/SaidHeading";
+import CommaBox from "../../SubComponents/CommaBox";
 
 const Products = () => {
   return (
     <div className="py-6 md:py-12 space-y-8 sm:space-y-16">
       
       <SaidHeading>Our Products</SaidHeading>
-      <h1 className="container text-2xl md:text-5xl font-bold text-primary text-center 2xl:w-4/5 px-4">
-        Delivering high-performance barcode labels, custom printed labels, and
-        TTR ribbons for logistics, pharma, retail & more.
-      </h1>
+      
+      <CommaBox> Delivering high-performance barcode labels, custom printed labels, and
+        TTR ribbons for logistics, pharma, retail & more.</CommaBox>
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Product 1 */}
         <div

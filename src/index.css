@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes Rspin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.spin {
+  animation: spin 50s linear infinite;
+}
+
+.fastspin {
+  animation: spin 4s linear infinite;
+}
+
+.Rspin {
+  animation: Rspin 5s linear infinite;
+}
