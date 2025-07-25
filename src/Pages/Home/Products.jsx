@@ -4,13 +4,13 @@ import Product2 from "../../assets/HomeImgs/Product2.webp";
 import Product3 from "../../assets/HomeImgs/Product3.webp";
 import PrimaryBtn from "../../SubComponents/PrimaryBtn";
 import { FaCheckCircle } from "react-icons/fa";
+import SaidHeading from "../../SubComponents/SaidHeading";
 
 const Products = () => {
   return (
     <div className="py-6 md:py-12 space-y-8 sm:space-y-16">
-      <div className="bg-primary text-4xl sm:text-5xl font-bold text-white w-8/12 sm:w-1/2 lg:w-[35%] 2xl:w-2/5 text-center lg:text-right lg:px-10 py-3">
-        Our Products
-      </div>
+      
+      <SaidHeading>Our Products</SaidHeading>
       <h1 className="container text-2xl md:text-5xl font-bold text-primary text-center 2xl:w-4/5 px-4">
         Delivering high-performance barcode labels, custom printed labels, and
         TTR ribbons for logistics, pharma, retail & more.

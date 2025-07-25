@@ -1,6 +1,7 @@
 import React from 'react'
 import person1 from '../../assets/HomeImgs/Person1.webp'
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa'
+import SaidHeading from '../../SubComponents/SaidHeading'
 
 const ClientSList = [
   {
@@ -56,9 +57,8 @@ const renderStars = (rating) => {
 const Clients = () => {
   return (
     <section className='py-8 sm:py-12 space-y-8 md:space-y-16'>
-      <div className="bg-primary text-4xl sm:text-5xl font-bold text-white w-8/12 sm:w-1/2 lg:w-[35%] 2xl:w-2/5 text-center lg:text-right lg:px-10 py-3">
-        What Our Clients Say
-      </div>
+      
+      <SaidHeading>What Our Clients Say</SaidHeading>
 
       <div className='container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
         {ClientSList.map((client) => (

@@ -112,7 +112,7 @@ const WeServe = () => {
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     pauseOnHover: true,
     centerMode: true,
     centerPadding: "0px",
@@ -158,7 +158,7 @@ const WeServe = () => {
             return (
               <div key={serve.id} className="px-8 flex flex-col items-center">
                 <div
-                  className={`h-full mx-auto flex flex-col space-y-4 sm:space-y-5 justify-between items-center text-center border border-primary/30 rounded-2xl p-6 shadow-md transition-all duration-300 ease-in-out
+                  className={`h-[400px] mx-auto flex flex-col space-y-4 sm:space-y-5 justify-between items-center text-center border border-primary/30 rounded-2xl p-6 shadow-md transition-all duration-300 ease-in-out
                     ${
                       isActive
                         ? "bg-gradient-to-b from-primary to-secondary text-white scale-100"
