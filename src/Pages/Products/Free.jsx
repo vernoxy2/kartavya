@@ -1,5 +1,5 @@
 import React from "react";
-import Bg from "../../assets/ProductsImgs/Free.webp";
+import Bg from "../../assets/ProductsImgs/FreeImg.webp";
 import PrimaryBtn from "../../SubComponents/PrimaryBtn";
 
 const style = {
