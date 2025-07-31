@@ -13,7 +13,7 @@ const Free = () => {
   return (
     <section
       style={style}
-      className="py-12 md:py-32 space-y-6 md:space-y-12 text-primary"
+      className="py-12 md:py-28 space-y-6 md:space-y-12 text-primary"
     >
       <div className="container">
         <div className="">
