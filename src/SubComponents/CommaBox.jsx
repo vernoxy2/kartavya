@@ -1,20 +1,18 @@
 import React from "react";
 import Comma from "../assets/comaa.png";
 
-const CommaBox = ({ children }) => {
+const CommaBox = ({ quote, subtext }) => {
   return (
     <div className="flex flex-col items-center text-center space-y-4 px-4 max-w-5xl mx-auto">
-      {/* Opening Quote - aligned left */}
       <div className="w-full">
         <img src={Comma} alt="Opening Quote" className="w-10 md:w-12" />
       </div>
 
-      {/* Quoted Text */}
-      <h1 className="text-primary font-bold text-2xl md:text-4xl">
-        {children}
-      </h1>
+      <h1 className="text-primary font-bold text-2xl md:text-4xl">{quote}</h1>
+      {subtext && (
+        <p className="text-base md:text-lg xl:text-2xl text-secondary md:pt-6">{subtext}</p>
+      )}
 
-      {/* Closing Quote - aligned right */}
       <div className="w-full flex justify-end">
         <img
           src={Comma}

@@ -56,15 +56,20 @@ const contact = [
     name: "Address",
     Details: "Plot-513,KBC Complex, Dharampur chowkdi, Valsad, Gujarat",
     icons: <FaMapMarkerAlt />,
-    link:"",
+    link: "",
   },
 ];
 
 const Footer = () => {
   return (
-    <section className="relative py-20 bg-primary text-white overflow-hidden">
-      <img src={OnlyLogo} alt="" className="absolute -bottom-20 -right-40 opacity-10"/>
+    <section className="relative space-y-4 py-20 bg-primary text-white overflow-hidden">
+      <img
+        src={OnlyLogo}
+        alt=""
+        className="absolute -top-20 -right-40 opacity-10"
+      />
       <div className="">
+        <div className="w-full h-1 bg-gradient-to-r from-transparent via-white to-transparent mb-12"></div>
         <div className="flex flex-col lg:flex-row gap-8 container">
           {/* Column 1 */}
           <div className="w-full lg:w-4/12 space-y-6">
@@ -74,24 +79,33 @@ const Footer = () => {
               className="w-[80%] sm:w-[60%] lg:w-auto object-contain drop-shadow-md"
             />
             <p className="text-2xl text-left font-semibold">
-              Smart labeling solutions with <br className="hidden lg:block"/> quality, speed & support.
+              Smart labeling solutions with <br className="hidden lg:block" />{" "}
+              quality, speed & support.
             </p>
           </div>
 
           {/* Column 2 */}
           <div className="w-full sm:w-6/12 lg:w-2/12 space-y-3 sm:space-y-6 py-2">
-            <h1 className="text-2xl sm:text-4xl text-left font-extrabold">Products</h1>
+            <h1 className="text-2xl sm:text-4xl text-left font-extrabold">
+              Products
+            </h1>
             {Products.map((product) => (
-              <p className="text-lg sm:text-2xl text-left font-semibold">{product.name}</p>
+              <p className="text-lg sm:text-2xl text-left font-semibold">
+                {product.name}
+              </p>
             ))}
           </div>
 
           {/* Column 3 */}
           <div className="w-full sm:w-6/12 lg:w-2/12 py-2 space-y-3 sm:space-y-6">
             {/* Add your content here */}
-            <h1 className="text-2xl sm:text-4xl text-left font-extrabold">Company</h1>
+            <h1 className="text-2xl sm:text-4xl text-left font-extrabold">
+              Company
+            </h1>
             {company.map((company) => (
-              <p className="text-lg sm:text-2xl text-left font-semibold">{company.name}</p>
+              <p className="text-lg sm:text-2xl text-left font-semibold">
+                {company.name}
+              </p>
             ))}
           </div>
 

@@ -46,7 +46,7 @@ const Products = () => {
               </div>
             </div>
             <div>
-              <PrimaryBtn className="bg-primary">Learn More</PrimaryBtn>
+              <PrimaryBtn className="bg-primary text-white">Learn More</PrimaryBtn>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ const Products = () => {
                     </div>
                   </div>
                   <div>
-                    <PrimaryBtn className="bg-primary text-xs">
+                    <PrimaryBtn className="bg-primary text-white text-xs">
                       Learn More
                     </PrimaryBtn>
                   </div>
@@ -122,7 +122,7 @@ const Products = () => {
                     </div>
                   </div>
                   <div>
-                    <PrimaryBtn className="bg-primary text-xs">
+                    <PrimaryBtn className="bg-primary text-white text-xs">
                       Learn More
                     </PrimaryBtn>
                   </div>

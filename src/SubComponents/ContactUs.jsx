@@ -6,24 +6,28 @@ const style = {
   backgroundImage: `url(${BackG})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-  backgroundPosition: "center",
+  backgroundPosition: "right",
 };
 
 const ContactUs = () => {
   return (
-    <section style={style} className=" py-12 sm:pt-16 text-white space-y-32 md:space-y-44 lg:space-y-44 container px-0 ">
-      <div>
-        <h1 className="text-4xl md:text-6xl font-extrabold">Contact Us</h1>
-      </div>
-      <div className="space-y-6 md:space-y-10">
-        <h1 className="text-2xl md:text-4xl font-bold">
-        Ready to Transform Your Labeling Process?
-      </h1>
-      <p className="text-lg md:text-2xl font-semibold px-4 md:px-0">
-        Get in touch with our experts today and discover the perfect <br className="hidden md:block" />
-        labeling solution for your business.
-      </p>
-      <PrimaryBtn className="bg-white text-primary lg:text-4xl font-bold">Get a Quote</PrimaryBtn>
+    <section
+      style={style}
+      className="py-12 md:py-32 space-y-6 md:space-y-12 text-primary"
+    >
+      <div className="container">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="md:text-start space-y-8">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
+               Let’s Work Together
+            </h1>
+            <p className="text-secondary md:text-xl">
+              Ready to elevate your product packaging with premium labels? <br className="hidden 2xl:block"/> Get
+              in touch with our expert team today.
+            </p>
+            <PrimaryBtn className="bg-primary text-white">Get a Quote</PrimaryBtn>
+          </div>
+        </div>
       </div>
     </section>
   );

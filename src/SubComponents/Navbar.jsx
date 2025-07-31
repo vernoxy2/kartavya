@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 const navItems = [
   { id: "home", label: "Home", link: "/" },
   { id: "about", label: "About Us", link: "/about" },
+  { id: "Products", label: "Products", link: "/products" },
   { id: "contact", label: "Contact Us", link: "/contact" },
 ];
 
@@ -29,7 +30,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex col-span-6 justify-center gap-10 text-[16px] font-medium text-[#353535]">
+        <nav className="hidden md:flex col-span-6 justify-center gap-6 xl:gap-10 text-[16px] font-medium text-[#353535]">
           {navItems.map((item) => (
             <NavLink
               key={item.id}

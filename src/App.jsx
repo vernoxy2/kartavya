@@ -7,6 +7,7 @@ import Footer from "./SubComponents/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AboutPage from "./Components/AboutPage";
+import ProductPage from "./Components/ProductPage";
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={ <AboutPage />} />
+        <Route path="/products" element={<ProductPage />} />
         <Route path="/contact" element={<ContHeader />} />
       </Routes>
       <Footer />
