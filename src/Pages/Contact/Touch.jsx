@@ -30,7 +30,7 @@ const Touch = () => {
     <section className="py-8 sm:py-12 space-y-8 md:space-y-16">
       <div className="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
         <div className="flex justify-center items-center">
-          <h1 className="text-2xl md:text-4xl xl:text-6xl text-primary font-bold underline">
+          <h1 className="text-5xl md:text-6xl text-primary font-bold underline">
             Get In Touch
           </h1>
           
@@ -40,7 +40,7 @@ const Touch = () => {
             key={item.id}
             className="flex flex-col space-y-4 sm:space-y-5 text-start shadow-lg rounded-xl border-[0.5px] border-transparent hover:bg-primary group duration-300 p-6"
           >
-            <div className="h-20 w-20 bg-white rounded-full text-primary flex justify-center items-center text-6xl">
+            <div className="group-hover:text-white text-primary flex justify-start items-start text-6xl">
               {item.icon}
             </div>
             <h1 className="text-2xl md:text-4xl font-bold text-primary group-hover:text-white duration-300">
