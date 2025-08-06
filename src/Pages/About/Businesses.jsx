@@ -5,10 +5,10 @@ import Circle1 from "../../assets/AboutImgs/Circle1.webp";
 import Circle2 from "../../assets/AboutImgs/Circle2.webp";
 import Experience from "../../assets/AboutImgs/Experience.png";
 import PANindia from "../../assets/AboutImgs/PANindia.png";
-import Range from '../../assets/AboutImgs/Range.png';
-import Customization from '../../assets/AboutImgs/Customization.png';
-import Delivery from '../../assets/AboutImgs/Delivery.png';
-import Support from '../../assets/AboutImgs/Support.png';
+import Range from "../../assets/AboutImgs/Range.png";
+import Customization from "../../assets/AboutImgs/Customization.png";
+import Delivery from "../../assets/AboutImgs/Delivery.png";
+import Support from "../../assets/AboutImgs/Support.png";
 import { TbTruckDelivery } from "react-icons/tb";
 
 const Businesses = () => {
@@ -100,11 +100,15 @@ const Businesses = () => {
         </div>
       </div>
 
-      <CommaBox>
-        At Kartavya, we don’t just deliver products{" "}
-        <br className="hidden md:block" />
-        we deliver labeling confidence.
-      </CommaBox>
+      <CommaBox
+        quote={
+          <>
+            At Kartavya, we don’t just deliver products,
+            <br />
+            we deliver labeling confidence.
+          </>
+        }
+      />
     </section>
   );
 };

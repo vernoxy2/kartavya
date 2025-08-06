@@ -10,11 +10,19 @@ import CommaBox from "../../SubComponents/CommaBox";
 const Products = () => {
   return (
     <div className="py-6 md:py-12 space-y-8 sm:space-y-16">
-      
       <SaidHeading>Our Products</SaidHeading>
-      
-      <CommaBox> Delivering high-performance barcode labels, custom printed labels, and
-        TTR ribbons for logistics, pharma, retail & more.</CommaBox>
+      <CommaBox
+        quote={
+          <>
+            Delivering high-performance barcode labels,
+            <br />
+            custom printed labels, and TTR ribbons for
+            <br />
+            logistics, pharma, retail & more.
+          </>
+        }
+      />
+
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Product 1 */}
         <div
@@ -46,7 +54,9 @@ const Products = () => {
               </div>
             </div>
             <div>
-              <PrimaryBtn className="bg-primary text-white">Learn More</PrimaryBtn>
+              <PrimaryBtn className="bg-primary text-white">
+                Learn More
+              </PrimaryBtn>
             </div>
           </div>
         </div>

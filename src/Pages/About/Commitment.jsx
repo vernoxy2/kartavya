@@ -8,7 +8,7 @@ import { CiMedal } from "react-icons/ci";
 const CommitmentList = [
   {
     id: 1,
-    name: "Quality-Driven Approach",
+    name: (<>Quality-Driven <br className="hidden sm:block" /> Approach</>),
     icon: <CiMedal />,
   },
   {
@@ -16,7 +16,7 @@ const CommitmentList = [
     name: (
       <>
         Deliveries
-        <br />
+        <br className="hidden sm:block"/>
         On-Time
       </>
     ),
