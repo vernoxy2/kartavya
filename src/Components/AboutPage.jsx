@@ -4,6 +4,7 @@ import Trust from '../Pages/About/Trust'
 import Businesses from '../Pages/About/Businesses'
 import Commitment from '../Pages/About/Commitment'
 import ContactUs from '../SubComponents/ContactUs'
+import Numbers from '../Pages/About/Numbers'
 
 const AboutPage = () => {
   return (
@@ -12,6 +13,7 @@ const AboutPage = () => {
       <Trust />
       <Businesses />
       <Commitment/>
+      <Numbers/>
       <ContactUs />
     </div>
   )

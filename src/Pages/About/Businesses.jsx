@@ -13,7 +13,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 
 const Businesses = () => {
   return (
-    <section className="py-8 sm:py-14 space-y-8 md:space-y-20 relative overflow-hidden">
+    <section className="hidden xl:block py-8 sm:py-14 space-y-8 md:space-y-20 relative overflow-hidden">
       <h1 className="text-primary font-extrabold text-4xl md:text-6xl text-center">
         Why Businesses Choose
       </h1>

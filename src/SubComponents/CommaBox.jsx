@@ -10,7 +10,7 @@ const CommaBox = ({ quote, subtext }) => {
 
       <h1 className="text-primary font-bold text-2xl md:text-4xl">{quote}</h1>
       {subtext && (
-        <p className="text-base md:text-lg xl:text-2xl text-secondary md:pt-6">{subtext}</p>
+        <p className="text-base md:text-lg xl:text-2xl text-secondary md:pt-6 z-20">{subtext}</p>
       )}
 
       <div className="w-full flex justify-end">
