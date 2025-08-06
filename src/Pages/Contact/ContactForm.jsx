@@ -7,7 +7,7 @@ const ContactForm = () => {
       <div className="bg-primary p-1.5 rounded-xl">
         <div className="flex flex-col-reverse md:flex-row gap-6">
           {/* Form Section */}
-          <div className="w-full md:w-1/2 bg-white p-5 md:p-8 rounded-xl">
+          <div className="w-full md:w-1/2 xl:w-5/12 bg-white p-5 md:p-8 rounded-xl">
             <form className="space-y-4 ">
               <div className="flex flex-col space-y-1">
                 <input
