@@ -9,11 +9,12 @@ import "slick-carousel/slick/slick-theme.css";
 import AboutPage from "./Components/AboutPage";
 import ProductPage from "./Components/ProductPage";
 import ContactPage from "./Components/ContactPage";
+import webbg from "./assets/Webbg.webp";
 
 
 const App = () => {
   return (
-    <div className="bg-white overflow-x-hidden scroll-smooth text-center">
+    <div style={{ backgroundImage: `url(${webbg})` }} className="bg-white overflow-x-hidden scroll-smooth text-center">
       <Navbar />
 
       <Routes>
