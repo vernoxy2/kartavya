@@ -96,8 +96,8 @@ const Clients = () => {
         <Slider {...settings}>
           {ClientSList.map((client) => (
             <div data-aos="fade" key={client.id} className="px-8 md:px-4 lg:px-8">
-              <div className="flex flex-col space-y-3 sm:space-y-5 justify-center items-center text-center group bg-secondary p-12 py-8 text-white hover:bg-primary duration-300 rounded-lg h-full">
-                <div className="flex gap-1 text-lg">
+              <div className="flex flex-col space-y-3 sm:space-y-5 justify-center items-center text-center group bg-secondary p-12 py-8 text-white hover:bg-primary duration-300 h-full">
+                <div className="flex gap-1 text-2xl ">
                   {renderStars(client.rate)}
                 </div>
                 <p className="text-base md:text-xl">"{client.review}"</p>
@@ -105,7 +105,7 @@ const Clients = () => {
                   <img
                     src={client.image}
                     alt={client.name}
-                    className="w-24 h-24 object-cover rounded-full mb-4"
+                    className="w-20 h-20 object-cnover rounded-full mb-4"
                   />
                   <div className="my-auto text-start">
                     <h1 className="text-xl md:text-2xl font-semibold">
