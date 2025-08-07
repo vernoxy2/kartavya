@@ -68,11 +68,11 @@ const Clients = () => {
           >
             <img src={client.image} alt={client.name} className=" object-contain" />
             <h1 className="text-2xl md:text-4xl font-bold">{client.name}</h1>
-            {/* <p className="text-lg md:text-2xl">{client.designation}</p>
+            <p className="text-lg md:text-2xl">{client.designation}</p>
             <p className="text-lg md:text-2xl">{client.review}</p>
             <div className="flex gap-1 text-xl">
               {renderStars(client.rate)}
-            </div> */}
+            </div>
           </div>
         ))}
       </div>

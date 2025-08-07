@@ -70,7 +70,7 @@ const StatsSection = () => {
               key={index}
               data-aos="fade-up"
               className={
-                "relative group rounded-xl p-6 shadow-md flex flex-col gap-4 transition-transform hover:scale-[1.02] duration-300 hover:bg-primary bg-white"
+                "relative group rounded-xl p-8 shadow-md flex flex-col gap-4 transition-transform hover:scale-[1.02] duration-300 hover:bg-primary bg-white"
               }
             >
               <span className="absolute top-3 right-4 text-lg font-semibold opacity-60 text-primary group-hover:text-white duration-300">
@@ -79,7 +79,7 @@ const StatsSection = () => {
 
               {/* Icon */}
               <div
-                className={`w-28 h-28 rounded-full flex items-center text-4xl text-primary  bg-[#F8F8F8] justify-center mb-8`}
+                className={`w-24 h-24 rounded-full flex items-center text-4xl text-primary  bg-[#F8F8F8] justify-center mb-8`}
               >
                 {stat.icon}
               </div>

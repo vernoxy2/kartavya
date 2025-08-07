@@ -2,6 +2,8 @@ import React from "react";
 import { BsLightningChargeFill } from "react-icons/bs";
 import { FaBoxesStacked, FaBrain, FaGears, FaHeadset } from "react-icons/fa6";
 import { PiMedalFill } from "react-icons/pi";
+import DeliveringBg from "../../assets/HomeImgs/DeliveringBg.png";
+import DeliveringBg2 from "../../assets/HomeImgs/DeliveringBg2.png";
 
 const List = [
   {
@@ -50,7 +52,9 @@ const List = [
 
 const Delivering = () => {
   return (
-    <section className="py-8 sm:py-12 space-y-6 md:space-y-16">
+    <section className="py-8 sm:py-12 space-y-6 md:space-y-16 relative">
+      <img src={DeliveringBg} alt=""  className="absolute left-0 -top-20 sm:top-12 h-52 lg:h-auto z-0"/>
+      <img src={DeliveringBg2} alt=""  className="absolute right-0 -top-20 sm:-top-28 h-52 lg:h-auto z-0"/>
       <div className="flex flex-col gap-y-9 container">
         {/* header section */}
         <h1 className="text-3   xl md:text-6xl font-bold text-primary">
@@ -65,11 +69,11 @@ const Delivering = () => {
         </p>
       </div>
       {/* main section */}
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 z-10">
         {List.map((item) => (
           <div
             key={item.id}
-            className="group flex flex-col space-y-4 sm:space-y-5 p-6 py-10 justify-start items-start text-start text-secondary hover:text-primary duration-300 transfrom border-[0.5px] border-transparent hover:border-primary group shadow-lg rounded-3xl hover:shadow-2xl"
+            className="group z-10 flex flex-col space-y-4 sm:space-y-5 p-6 py-10 justify-start items-start text-start text-secondary hover:text-primary duration-300 transfrom border-[0.5px] border-transparent hover:border-primary group shadow-lg rounded-3xl hover:shadow-2xl"
           >
             <div className="h-20 w-20 bg-secondary group-hover:bg-primary duration-300 rounded-3xl text-white flex justify-center items-center text-4xl group-hover:scale-105">{item.icons}</div>
             <h1 className="text-2xl md:text-3xl font-bold">{item.name}</h1>

@@ -132,15 +132,15 @@ const WeServe = () => {
 
   return (
     <section className="py-8 sm:py-12 space-y-8 md:space-y-10">
-      <div className="text-center">
+      <div className="container text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-primary">
           Industries We Serve
         </h1>
-        <p className="text-lg sm:text-2xl text-secondary font-semibold mt-4">
+        <p className=" sm:text-2xl text-secondary font-semibold mt-4">
           Smart Labeling & Ribbon Solutions <br className="lg:hidden" /> for
           Every Sector
         </p>
-        <p className="text-lg sm:text-2xl text-secondary 2xl:w-2/3 mx-auto font-semibold mt-2">
+        <p className=" sm:text-2xl text-secondary mx-auto font-semibold mt-2">
           At Kartavya, we provide reliable and industry-specific labeling and
           printing solutions that help businesses stay organized, compliant, and
           customer-ready. Our range of barcode labels, printed labels, and TTR

@@ -57,7 +57,7 @@ const Navbar = () => {
             href="https://wa.me/919624150967"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:flex items-center gap-2 bg-[#1A1A3C] text-white px-4 py-2 rounded-md text-sm font-semibold shadow-md hover:bg-[#0f1f36] transition"
+            className="hidden md:flex items-center  gap-2 bg-[#1A1A3C] text-white px-4 py-2 rounded-md text-sm font-semibold shadow-md hover:scale-95 hover:bg-[#0f1f36] transition"
           >
             <FaWhatsapp className="text-lg" />
             +91 96241 50967
@@ -99,7 +99,7 @@ const Navbar = () => {
               href="https://wa.me/919624150967"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-wrap items-center gap-2 bg-[#1A1A3C] text-white px-4 py-2 rounded-md text-sm font-semibold shadow-md hover:bg-[#0f1f36] transition"
+              className="flex flex-wrap justify-center items-center gap-2 bg-[#1A1A3C] text-white px-4 py-2 rounded-md text-sm font-semibold shadow-md hover:bg-[#0f1f36]   transition"
               onClick={handleNavClick}
             >
               <FaWhatsapp className="text-lg" />

@@ -1,6 +1,7 @@
 import React from "react";
 import BackG from "../assets/Quote.webp";
 import PrimaryBtn from "./PrimaryBtn";
+import { useNavigate } from "react-router-dom";
 
 const style = {
   backgroundImage: `url(${BackG})`,
@@ -10,6 +11,8 @@ const style = {
 };
 
 const ContactUs = () => {
+  const navigate = useNavigate();
+
   return (
     <section
       style={style}
@@ -19,13 +22,22 @@ const ContactUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:text-start space-y-8">
             <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
-               Let’s Work Together
+              Let’s Work Together
             </h1>
             <p className="text-secondary md:text-xl">
-              Ready to elevate your product packaging with premium labels? <br className="hidden 2xl:block"/> Get
-              in touch with our expert team today.
+              Ready to elevate your product packaging with premium labels?{" "}
+              <br className="hidden 2xl:block" /> Get in touch with our expert
+              team today.
             </p>
-            <PrimaryBtn className="bg-primary text-white">Get a Quote</PrimaryBtn>
+            <PrimaryBtn
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "instant" });
+                navigate("/contact");
+              }}
+              className="bg-primary text-white"
+            >
+              Get a Quote
+            </PrimaryBtn>
           </div>
         </div>
       </div>

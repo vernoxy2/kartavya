@@ -61,10 +61,10 @@ const Products = () => {
           </div>
         </div>
         {/* right border */}
-        <div className=" flex flex-col justify-between gap-8">
-          <div className="h-full flex justify-between gap-8">
+        <div className="flex flex-col justify-between gap-8">
+          <div className="h-full flex flex-col sm:flex-row justify-between  gap-x-8 gap-y-4">
             {/* Barcode Labels */}
-            <div className="w-full shadow-md hover:shadow-xl duration-300">
+            <div className="w-full duration-300">
               <div
                 className="shadow-2xl bg-no-repeat bg-cover py-28 relative group"
                 style={{ backgroundImage: `url(${Product2})` }}
@@ -102,7 +102,7 @@ const Products = () => {
               </div>
             </div>
             {/* TTR Ribbons */}
-            <div className="w-full shadow-md hover:shadow-xl duration-300">
+            <div className="w-full duration-300">
               <div
                 className="shadow-2xl bg-no-repeat bg-cover py-28 relative group"
                 style={{ backgroundImage: `url(${Product3})` }}
