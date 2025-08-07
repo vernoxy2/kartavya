@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/HomeImgs/LogoW.webp";
-import OnlyLogo from "../../public/OnlyLogo.webp";
+import OnlyLogo from "../assets/OnlyLogo.webp";
 
 import { MdCall, MdEmail } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
