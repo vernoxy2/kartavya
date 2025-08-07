@@ -36,7 +36,7 @@ const Weare = () => {
         </div>
       </div>
       <div>
-        <PrimaryBtn className="-mt-20 bg-primary text-white">Learn More</PrimaryBtn>
+        <PrimaryBtn className="-mt-20 bg-primary text-white opacity-0">Learn More</PrimaryBtn>
       </div>
     </div>
   );

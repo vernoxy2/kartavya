@@ -23,7 +23,7 @@ const Products = () => {
         }
       />
 
-      <div className="container grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="container grid grid-cols-1 xl:grid-cols-2 gap-4">
         {/* Product 1 */}
         <div
           className="shadow-2xl bg-no-repeat bg-cover py-56 relative group"
@@ -54,9 +54,9 @@ const Products = () => {
               </div>
             </div>
             <div>
-              <PrimaryBtn className="bg-primary text-white">
+              {/* <PrimaryBtn className="bg-primary text-white">
                 Learn More
-              </PrimaryBtn>
+              </PrimaryBtn> */}
             </div>
           </div>
         </div>
@@ -94,9 +94,9 @@ const Products = () => {
                     </div>
                   </div>
                   <div>
-                    <PrimaryBtn className="bg-primary text-white text-xs">
+                    {/* <PrimaryBtn className="bg-primary text-white text-xs">
                       Learn More
-                    </PrimaryBtn>
+                    </PrimaryBtn> */}
                   </div>
                 </div>
               </div>
@@ -132,9 +132,9 @@ const Products = () => {
                     </div>
                   </div>
                   <div>
-                    <PrimaryBtn className="bg-primary text-white text-xs">
+                    {/* <PrimaryBtn className="bg-primary text-white text-xs">
                       Learn More
-                    </PrimaryBtn>
+                    </PrimaryBtn> */}
                   </div>
                 </div>
               </div>

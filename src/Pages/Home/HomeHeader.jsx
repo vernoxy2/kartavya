@@ -17,7 +17,7 @@ const HomeHeader = () => {
             Precision-made barcode labels that ensure smooth scanning,
             durability, and compliance for all industries.
           </p>
-          <PrimaryBtn className="bg-primary text-white">Explore Barcode Labels</PrimaryBtn>
+          {/* <PrimaryBtn className="bg-primary text-white">Explore Barcode Labels</PrimaryBtn> */}
         </div>
         {/* Right image section */}
         <div className="md:w-5/12 ">
