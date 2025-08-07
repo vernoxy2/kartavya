@@ -132,7 +132,7 @@ const WeServe = () => {
 
   return (
     <section className="py-8 sm:py-12 space-y-8 md:space-y-10">
-      <div className="container text-center">
+      <div data-aos="fade-up" className="container text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-primary">
           Industries We Serve
         </h1>
@@ -156,7 +156,7 @@ const WeServe = () => {
             const isActive = index === activeSlide;
 
             return (
-              <div key={serve.id} className="px-8 flex flex-col items-center">
+              <div data-aos="zoom-in" key={serve.id} className="px-8 flex flex-col items-center">
                 <div
                   className={`h-[400px] mx-auto flex flex-col space-y-4 sm:space-y-5 justify-between items-center text-center border border-primary/30 rounded-2xl p-6 shadow-md transition-all duration-300 ease-in-out
                     ${

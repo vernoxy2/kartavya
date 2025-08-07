@@ -44,7 +44,7 @@ const Machines = () => {
   return (
     <div className="py-8 sm:py-12 space-y-8 md:space-y-16">
       <SaidHeading>Machines & devices</SaidHeading>
-      <div className="space-y-6 container">
+      <div data-aos="fade-up" className="space-y-6 container">
         <h1 className=" text-2xl md:text-4xl font-bold text-primary text-center">
            Label Printers, Barcode Scanners & More
         </h1>
@@ -57,6 +57,7 @@ const Machines = () => {
       <div className="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
         {data.map((item) => (
           <div
+          data-aos="zoom-in"
             key={item.id}
             className="flex m-2 flex-col bg-primary/5 group hover:bg-primary hover:scale-105 duration-300 justify-center text-center rounded-md overflow-hidden"
           >

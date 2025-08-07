@@ -3,7 +3,7 @@ import Comma from "../assets/comaa.png";
 
 const CommaBox = ({ quote, subtext }) => {
   return (
-    <div className="flex flex-col items-center text-center space-y-4 px-4 max-w-5xl mx-auto relative">
+    <div data-aos="zoom-in" className="flex flex-col items-center text-center space-y-4 px-4 max-w-5xl mx-auto relative">
       {/* Top Quote Icon */}
       <div className="w-full flex justify-start">
         <img src={Comma} alt="Opening Quote" className="w-10 md:w-12" />

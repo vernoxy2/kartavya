@@ -44,7 +44,10 @@ const contact = [
 
 const Footer = () => {
   return (
-    <section className="relative space-y-4 py-20 bg-primary text-white overflow-hidden">
+    <section
+      data-aos="fade"
+      className="relative space-y-4 py-20 bg-primary text-white overflow-hidden"
+    >
       <img
         src={OnlyLogo}
         alt="Logo"
@@ -52,11 +55,20 @@ const Footer = () => {
       />
 
       <div>
-        <div className="w-full h-1 bg-gradient-to-r from-transparent via-white to-transparent mb-12"></div>
-        <div className="flex flex-col lg:flex-row gap-8 container">
+        <div
+          data-aos="zoom-in"
+          className="w-full h-1 bg-gradient-to-r from-transparent via-white to-transparent mb-12"
+        ></div>
+        <div
+          data-aos="fade-up"
+          className="flex flex-col lg:flex-row gap-8 container"
+        >
           {/* Column 1 */}
           <div className="w-full lg:w-4/12 space-y-6">
-            <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth"})}>
+            <Link
+              to="/"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
               <img
                 src={Logo}
                 alt="Kartavya Logo"

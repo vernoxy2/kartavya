@@ -17,7 +17,7 @@ const Free = () => {
     >
       <div className="container">
         <div className="">
-          <div className="md:text-end space-y-8 ">
+          <div data-aos="fade-left" className="md:text-end space-y-8 ">
             <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
               Free Sample. No Obligation
             </h1>

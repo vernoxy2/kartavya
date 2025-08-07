@@ -5,7 +5,7 @@ const Trust = () => {
   return (
     <section className="py-6 md:py-16 space-y-8 md:space-y-16">
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-2 gap-y-12">
-        <div className="flex flex-col space-y-4 sm:space-y-10 justify-center items-start lg:text-start">
+        <div data-aos="fade-right" className="flex flex-col space-y-4 sm:space-y-10 justify-center items-start lg:text-start">
           <h1 className="text-primary font-bold text-2xl md:text-4xl">
             Delivering Labeling & Printing Solutions with Trust and Precision
           </h1>
@@ -20,7 +20,7 @@ const Trust = () => {
             quality, fast delivery, and expert support—pan India
           </p>
         </div>
-        <div className="w-full h-full">
+        <div data-aos="fade-left" className="w-full h-full">
           <img src={TrustImg} alt="" className="w-full object-cover pointer-events-none" />
         </div>
       </div>

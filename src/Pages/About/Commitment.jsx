@@ -43,7 +43,7 @@ const Commitment = () => {
           <FaHandshake className="text-6xl my-auto" />
         </span>
       </SaidHeading>
-      <div className="space-y-4">
+      <div data-aos="fade-up" className="space-y-4">
         <h1 className="container text-2xl md:text-4xl font-bold text-primary text-center ">
           What We Stand For Highlight your values
         </h1>
@@ -57,6 +57,7 @@ const Commitment = () => {
         <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-7">
           {CommitmentList.map((item) => (
             <div
+            data-aos="fade-up"
               key={item.id}
               className="flex flex-col space-y-4 sm:space-y-5 justify-center items-center text-center hover:scale-105 sm:hover:scale-100 border-l-4 sm:border-x-0  sm:border-t-4 border-transparent border-gay-900 hover:border-primary group duration-300 p-6 py-10"
             >

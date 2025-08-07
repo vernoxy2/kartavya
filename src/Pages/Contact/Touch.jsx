@@ -34,7 +34,7 @@ const Touch = () => {
       <img src={BgR} alt="" className="absolute right-0 top-6"/>
       <img src={BgL} alt="" className="absolute -bottom-16 z-0"/>
       <div className="container grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
-        <div className="flex justify-center items-center col-span-1">
+        <div data-aos="zoom-in" className="flex justify-center items-center col-span-1">
           <h1 className="text-5xl md:text-6xl text-primary font-bold underline mb-6">
             Get In Touch
           </h1>
@@ -42,6 +42,7 @@ const Touch = () => {
 
         {data.map((item) => (
           <a
+          data-aos="fade-right"
             key={item.id}
             href={item.link}
             target={item.link.startsWith("http") ? "_blank" : "_self"}

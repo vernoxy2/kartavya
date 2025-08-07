@@ -9,7 +9,7 @@ const TTR = () => {
       {/* Main container */}
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Text section */}
-        <div className="text-start space-y-4 md:space-y-8 flex flex-col justify-center">
+        <div data-aos="fade-right" className="text-start space-y-4 md:space-y-8 flex flex-col justify-center">
           <h1 className="text-primary text-3xl md:text-4xl font-bold">
             TTR (Thermal Transfer Ribbons){" "}
           </h1>
@@ -36,11 +36,11 @@ const TTR = () => {
           </div>
         </div>
         {/* Image section */}
-        <div className="flex items-center justify-center pointer-events-none">
+        <div data-aos="fade-left" className="flex items-center justify-center pointer-events-none">
           <img src={TTRImg} alt="" />
         </div>
       </div>
-      <PrimaryBtn className="bg-primary text-white">View More</PrimaryBtn>
+      <PrimaryBtn className="bg-primary opacity-0 text-white">View More</PrimaryBtn>
     </section>
   );
 };

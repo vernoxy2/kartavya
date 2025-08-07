@@ -14,14 +14,14 @@ import { TbTruckDelivery } from "react-icons/tb";
 const Businesses = () => {
   return (
     <section className="hidden xl:block py-8 sm:py-14 space-y-8 md:space-y-20 relative overflow-hidden">
-      <h1 className="text-primary font-extrabold text-4xl md:text-6xl text-center">
+      <h1 data-aos="fade-up" className="text-primary font-extrabold text-4xl md:text-6xl text-center">
         Why Businesses Choose
       </h1>
 
       {/* Layered Images Container */}
       <div className="container flex flex-col lg:flex-row">
         <div className="lg:w-3/12 flex flex-col gap-4 justify-between">
-          <div className="group flex flex-col gap-2 p-1 items-center justify-center h-full pr-5 ">
+          <div data-aos="zoom-in" className="group flex flex-col gap-2 p-1 items-center justify-center h-full pr-5 ">
             <img
               src={Experience}
               alt=""
@@ -31,7 +31,7 @@ const Businesses = () => {
               10+ Years of Industry Experience
             </h1>
           </div>
-          <div className="group flex flex-col gap-2 p-1 items-center justify-center h-full pe-5">
+          <div data-aos="zoom-in" className="group flex flex-col gap-2 p-1 items-center justify-center h-full pe-5">
             <img
               src={PANindia}
               alt=""
@@ -43,7 +43,7 @@ const Businesses = () => {
           </div>
         </div>
         {/* Right Image */}
-        <div className="lg:w-6/12 flex items-center justify-center">
+        <div data-aos="zoom-in" className="lg:w-6/12 flex items-center justify-center">
           <img src={Circle2} alt="Roll" className="fastspin object-contain pointer-events-none" />
           <img src={Circle1} className="absolute Rspin pointer-events-none" alt="" />
           <img
@@ -53,7 +53,7 @@ const Businesses = () => {
           />
         </div>
         <div className="lg:w-3/12 flex flex-col gap-4 justify-between">
-          <div className="group flex flex-col gap-2 p-1 items-center justify-center h-full pe-5 ">
+          <div data-aos="zoom-in" className="group flex flex-col gap-2 p-1 items-center justify-center h-full pe-5 ">
             <img
               src={Support}
               alt=""
@@ -63,7 +63,7 @@ const Businesses = () => {
               Dedicated Client Support
             </h1>
           </div>
-          <div className="group flex flex-col gap-2 p-1 items-center justify-center h-full pr-5">
+          <div data-aos="zoom-in" className="group flex flex-col gap-2 p-1 items-center justify-center h-full pr-5">
             <img
               src={Delivery}
               alt=""
@@ -77,7 +77,7 @@ const Businesses = () => {
       </div>
       <div className="container w-full ">
         <div className="-mt-16 flex gap-36 justify-center">
-          <div className="group flex flex-col gap-2 p-1 items-center justify-center h-full pe-2  ">
+          <div data-aos="zoom-in" className="group flex flex-col gap-2 p-1 items-center justify-center h-full pe-2  ">
             <img
               src={Range}
               alt=""
@@ -87,7 +87,7 @@ const Businesses = () => {
               Wide Range of <br /> Labels & Ribbons
             </h1>
           </div>
-          <div className="group flex flex-col gap-2 p-1 items-center justify-center h-full ">
+          <div data-aos="zoom-in" className="group flex flex-col gap-2 p-1 items-center justify-center h-full ">
             <img
               src={Customization}
               alt=""

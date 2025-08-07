@@ -16,10 +16,10 @@ const Navbar = () => {
   const handleNavClick = () => setIsOpen(false);
 
   return (
-    <header className="w-full shadow-sm  top-0 left-0 z-50 ">
-      <div className="container mx-auto  grid grid-cols-12 items-center">
+    <header  className="w-full shadow-sm  top-0 left-0 z-50 ">
+      <di  className="container mx-auto  grid grid-cols-12 items-center">
         {/* Logo */}
-        <div className="col-span-6 md:col-span-3 ">
+        <div data-aos="fade-right" className="col-span-6 md:col-span-3 ">
           <NavLink to="/" onClick={handleNavClick}>
             <img
               src={Logo}
@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex col-span-6 justify-center gap-6 xl:gap-10 text-[16px] font-medium text-[#353535]">
+        <nav data-aos="fade" className="hidden md:flex col-span-6 justify-center gap-6 xl:gap-10 text-[16px] font-medium text-[#353535]">
           {navItems.map((item) => (
             <NavLink
               key={item.id}
@@ -52,7 +52,7 @@ const Navbar = () => {
         </nav>
 
         {/* WhatsApp + Hamburger */}
-        <div className="col-span-6 md:col-span-3 flex justify-end items-center gap-4">
+        <div data-aos="fade-left" className="col-span-6 md:col-span-3 flex justify-end items-center gap-4">
           <a
             href="https://wa.me/919624150967"
             target="_blank"
@@ -70,7 +70,7 @@ const Navbar = () => {
             {isOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
-      </div>
+      </di>
 
       {/* Mobile Menu */}
       <div

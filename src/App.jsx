@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./SubComponents/Navbar";
 import Footer from "./SubComponents/Footer";
@@ -9,8 +9,16 @@ import ContactPage from "./Components/ContactPage";
 import webbg from "./assets/Webbg.webp";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Aos from "aos";
+import "aos/dist/aos.css"; // Ensure AOS styles are imported
 
 const App = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000,
+      delay: 200
+     });
+  }, []);
+
   return (
     <div
       style={{ backgroundImage: `url(${webbg})` }}

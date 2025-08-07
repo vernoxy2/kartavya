@@ -95,7 +95,7 @@ const Clients = () => {
       <div className="container mx-auto px-4">
         <Slider {...settings}>
           {ClientSList.map((client) => (
-            <div key={client.id} className="px-8 md:px-4 lg:px-8">
+            <div data-aos="fade" key={client.id} className="px-8 md:px-4 lg:px-8">
               <div className="flex flex-col space-y-3 sm:space-y-5 justify-center items-center text-center group bg-secondary p-12 py-8 text-white hover:bg-primary duration-300 rounded-lg h-full">
                 <div className="flex gap-1 text-lg">
                   {renderStars(client.rate)}

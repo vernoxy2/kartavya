@@ -7,17 +7,32 @@ import WeareImg3 from "../../assets/HomeImgs/WeareBg2.webp";
 const Weare = () => {
   return (
     <div className="py-6 md:py-12 space-y-8 sm:space-y-20 relative">
-      <h1 className="text-4xl md:text-6xl font-bold text-primary">
+      <h1 data-aos="fade-up" className="text-4xl md:text-6xl font-bold text-primary">
         Who We Are
       </h1>
-      <div className="bg-primary w-full lg:w-[48%] h-24 z-0 absolute top-52 sm:top-72 lg:top-1/3 "></div>
-      <img src={WeareImg2} alt="" className="absolute -top-10 sm:-top-24 z-0 h-[20%] sm:h-auto pointer-events-none" />
-      <img src={WeareImg3} alt="" className="absolute right-0 md:-bottom-44 -bottom-20   z-0 h-[12%] sm:h-auto pointer-events-none" />
+      <div data-aos="fade" className="bg-primary w-full lg:w-[48%] h-24 z-0 absolute top-52 sm:top-72 lg:top-1/3 "></div>
+      <img
+      data-aos="fade-right"
+        src={WeareImg2}
+        alt=""
+        className="absolute -top-10 sm:-top-24 z-0 h-[20%] sm:h-auto pointer-events-none"
+      />
+      <img
+      data-aos="fade-left"
+        src={WeareImg3}
+        alt=""
+        className="absolute right-0 md:-bottom-44 -bottom-20   z-0 h-[12%] sm:h-auto pointer-events-none"
+      />
       <div className="container grid grid-cols-1 lg:grid-cols-2 sm:gap-y-8 z-10">
-        <div className="z-10"> 
-          <img src={WeareImg} alt="Weare" className="h-full object-contain p-8 sm:p-0 mx-auto z-10 pointer-events-none" />
+        <div className="z-10">
+          <img
+          data-aos="fade-right"
+            src={WeareImg}
+            alt="Weare"
+            className="h-full object-contain p-8 sm:p-0 mx-auto z-10 pointer-events-none"
+          />
         </div>
-        <div className="flex flex-col space-y-4 sm:space-y-10 justify-center items-center lg:items-left text-center lg:text-right z-10">
+        <div data-aos="fade-left" className="flex flex-col space-y-4 sm:space-y-10 justify-center items-center lg:items-left text-center lg:text-right z-10">
           <h1 className="text-2xl md:text-4xl font-bold text-primary z-10">
             Reliable Labeling & Printing Solutions Tailored for Your Business
           </h1>
@@ -36,7 +51,9 @@ const Weare = () => {
         </div>
       </div>
       <div>
-        <PrimaryBtn className="-mt-20 bg-primary text-white opacity-0">Learn More</PrimaryBtn>
+        <PrimaryBtn className="-mt-20 bg-primary text-white opacity-0">
+          Learn More
+        </PrimaryBtn>
       </div>
     </div>
   );

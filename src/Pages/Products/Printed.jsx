@@ -9,11 +9,11 @@ const Printed = () => {
       {/* Main container */}
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Image section */}
-        <div className="flex items-center justify-center">
+        <div data-aos="fade-right" className="flex items-center justify-center">
           <img src={PrintedImg} alt="" className="w-full pointer-events-none" />
         </div>
         {/* Text section */}
-        <div className="text-end space-y-4 md:space-y-8 flex flex-col justify-center">
+        <div data-aos="fade-left" className="text-end space-y-4 md:space-y-8 flex flex-col justify-center">
           <h1 className="text-white text-3xl md:text-4xl font-bold">Printed Labels</h1>
           <p className="text-white font-semibold text-lg md:text-2xl">
             Custom-designed labels for product{" "}
@@ -39,7 +39,7 @@ const Printed = () => {
           </div>
         </div>
       </div>
-      <PrimaryBtn className="bg-white ">View More</PrimaryBtn>
+      <PrimaryBtn className="bg-white opacity-0">View More</PrimaryBtn>
     </section>
   );
 };

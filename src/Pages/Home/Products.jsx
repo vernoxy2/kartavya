@@ -23,13 +23,13 @@ const Products = () => {
         }
       />
 
-      <div className="container grid grid-cols-1 xl:grid-cols-2 gap-4">
+      <div data-aos="fade-down" className="container grid grid-cols-1 xl:grid-cols-2 gap-4">
         {/* Product 1 */}
         <div
           className="shadow-2xl bg-no-repeat bg-cover py-56 relative group"
           style={{ backgroundImage: `url(${Product1})` }}
         >
-          <div className="text-primary font-bold text-4xl group-hover:bg-white/65 duration-300 flex absolute top-5 py-3 px-7 ">
+          <div  className="text-primary font-bold text-4xl group-hover:bg-white/65 duration-300 flex absolute top-5 py-3 px-7 ">
             Printed Labels
           </div>
           <div className="group-hover:bg-white/65 duration-300 absolute bottom-0 w-full text-start flex flex-row justify-between items-center ps-5 py-4">

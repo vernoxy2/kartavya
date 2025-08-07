@@ -9,7 +9,7 @@ const Barcode = () => {
       {/* Main container */}
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Text section */}
-        <div className="text-start space-y-4 md:space-y-8 flex flex-col justify-center">
+        <div data-aos="fade-right" className="text-start space-y-4 md:space-y-8 flex flex-col justify-center">
           <h1 className="text-primary text-3xl md:text-4xl font-bold">Barcode Labels</h1>
           <p className="text-secondary font-semibold text-lg md:text-2xl">
             Durable and scannable labels ideal for{" "}
@@ -35,11 +35,11 @@ const Barcode = () => {
           </div>
         </div>
         {/* Image section */}
-        <div className="flex items-center justify-center">
+        <div data-aos="fade-left" className="flex items-center justify-center">
           <img src={BarcodeImg} alt="" className=" mx-auto lg:ms-auto pointer-events-none" />
         </div>
       </div>
-      <PrimaryBtn className="bg-primary text-white">View More</PrimaryBtn>
+      <PrimaryBtn className="bg-primary text-white opacity-0">View More</PrimaryBtn>
     </section>
   );
 };

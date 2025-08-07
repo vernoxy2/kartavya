@@ -1,6 +1,6 @@
 import React from "react";
 import PrimaryBtn from "../../SubComponents/PrimaryBtn";
-import Header from "../../assets/HomeImgs/Header.webp"
+import Header from "../../assets/HomeImgs/Header.webp";
 
 const HomeHeader = () => {
   return (
@@ -8,7 +8,7 @@ const HomeHeader = () => {
       {/* Hero section */}
       <div className="container md:flex space-y-10 items-center justify-between">
         {/* Left text section */}
-        <div className="md:w-7/12 flex flex-col space-y-10 justify-center items-center md:items-start text-center md:text-left">
+        <div data-aos="fade-right" className="md:w-7/12 flex flex-col space-y-10 justify-center items-center md:items-start text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold text-primary">
             Reliable Bar code Labels for <br />{" "}
             <span className="font-normal">Seamless Tracking</span>
@@ -21,7 +21,13 @@ const HomeHeader = () => {
         </div>
         {/* Right image section */}
         <div className="md:w-5/12 ">
-          <img src={Header} alt="Header" className="w-full object-contain pointer-events-none"/></div>
+          <img
+          data-aos="fade-down"
+            src={Header}
+            alt="Header"
+            className="w-full object-contain pointer-events-none"
+          />
+        </div>
       </div>
     </div>
   );

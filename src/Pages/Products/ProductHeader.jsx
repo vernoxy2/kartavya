@@ -10,7 +10,7 @@ const style = {
 
 const ProductHeader = () => {
   return (
-    <section style={style} className='py-72 md:py-92'></section>
+    <section data-aos="fade" style={style} className='py-72 md:py-92'></section>
   )
 }
 

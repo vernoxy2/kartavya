@@ -12,7 +12,7 @@ const Explore = () => {
         quote="Explore Our Labeling & Ribbon Solutions"
         subtext="Whether you need barcode labels for logistics, custom printed labels for branding, or thermal transfer ribbons for high-performance printing, Kartavya offers smart, reliable, and customizable solutions trusted across industries."
       />
-      <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-primary text-center py-6">
+      <h1 data-aos="fade-up" className="text-4xl md:text-5xl xl:text-6xl font-bold text-primary text-center py-6">
         {" "}
         Our Products
       </h1>

@@ -4,10 +4,10 @@ import { BiSolidSend } from "react-icons/bi";
 const ContactForm = () => {
   return (
     <section className="py-8 md:py-12 container space-y-6">
-      <div className="bg-primary p-1.5 rounded-xl">
+      <div data-aos="fade" className="bg-primary p-1.5 rounded-xl">
         <div className="flex flex-col-reverse md:flex-row gap-6">
           {/* Form Section */}
-          <div className="w-full md:w-1/2 xl:w-5/12 bg-white p-5 md:p-8 rounded-xl">
+          <div data-aos="fade-left" className="w-full md:w-1/2 xl:w-5/12 bg-white p-5 md:p-8 rounded-xl">
             <form className="space-y-4 ">
               <div className="flex flex-col space-y-1">
                 <input
@@ -50,7 +50,7 @@ const ContactForm = () => {
           </div>
 
           {/* Text Content Section */}
-          <div className="w-full md:w-1/2 text-white p-4 lg:p-6 space-y-4 md:text-start flex flex-col justify-center">
+          <div data-aos="fade-right" className="w-full md:w-1/2 text-white p-4 lg:p-6 space-y-4 md:text-start flex flex-col justify-center">
             <p className="text-lg md:text-2xl font-semibold">
               Have any query ?
             </p>

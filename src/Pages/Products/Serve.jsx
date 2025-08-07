@@ -21,13 +21,14 @@ const data = [
 const Serve = () => {
   return (
     <section className="py-10 sm:py-20 space-y-8 md:space-y-10">
-      <h1 className="text-2xl md:text-4xl xl:text-6xl font-bold text-primary text-center">
+      <h1 data-aos="fade-up" className="text-2xl md:text-4xl xl:text-6xl font-bold text-primary text-center">
         Industries We Serve
       </h1>
 
       <div className="container px-0 flex flex-wrap justify-center items-center gap-4 md:gap-2">
         {data.map((item) => (
           <div
+            data-aos="zoom-in"
             key={item.id}
             className="w-[132px] h-48 flex flex-col justify-center items-center text-center  border border-transparent bg-white group hover:bg-primary hover:scale-105 transition duration-300"
           >

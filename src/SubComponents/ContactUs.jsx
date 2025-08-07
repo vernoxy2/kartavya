@@ -19,7 +19,7 @@ const ContactUs = () => {
       className="py-12 md:py-32 space-y-6 md:space-y-12 text-primary"
     >
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div data-aos="fade-right" className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:text-start space-y-8">
             <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
               Let’s Work Together

@@ -10,7 +10,7 @@ const style = {
 
 const AboutHeader = () => {
   return (
-    <section style={style} className="py-72 md:py-92 space-y-8 md:space-y-16">
+    <section data-aos="fade" style={style} className="py-72 md:py-92 space-y-8 md:space-y-16">
       <div></div>
     </section>
   );

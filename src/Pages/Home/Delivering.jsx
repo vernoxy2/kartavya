@@ -55,7 +55,7 @@ const Delivering = () => {
     <section className="py-8 sm:py-12 space-y-6 md:space-y-16 relative">
       <img src={DeliveringBg} alt=""  className="absolute left-0 -top-20 sm:top-12 h-52 lg:h-auto z-0 pointer-events-none"/>
       <img src={DeliveringBg2} alt=""  className="absolute right-0 -top-20 sm:-top-28 h-52 lg:h-auto z-0 pointer-events-none"/>
-      <div className="flex flex-col gap-y-9 container">
+      <div data-aos="fade-up" className="flex flex-col gap-y-9 container">
         {/* header section */}
         <h1 className="text-3   xl md:text-6xl font-bold text-primary">
           Delivering Smart Labeling Solutions <br className="hidden lg:block" />
@@ -72,6 +72,7 @@ const Delivering = () => {
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 z-10">
         {List.map((item) => (
           <div
+          data-aos="zoom-out"
             key={item.id}
             className="group z-10 flex flex-col space-y-4 sm:space-y-5 p-6 py-10 justify-start items-start text-start text-secondary hover:text-primary duration-300 transfrom border-[0.5px] border-transparent hover:border-primary group shadow-lg rounded-3xl hover:shadow-2xl"
           >
