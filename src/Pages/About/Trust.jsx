@@ -21,7 +21,7 @@ const Trust = () => {
           </p>
         </div>
         <div className="w-full h-full">
-          <img src={TrustImg} alt="" className="w-full object-cover" />
+          <img src={TrustImg} alt="" className="w-full object-cover pointer-events-none" />
         </div>
       </div>
     </section>

@@ -48,7 +48,7 @@ const Footer = () => {
       <img
         src={OnlyLogo}
         alt="Logo"
-        className="absolute -top-20 -right-40 opacity-10"
+        className="absolute -top-20 -right-40 opacity-10 pointer-events-none"
       />
 
       <div>
@@ -60,7 +60,7 @@ const Footer = () => {
               <img
                 src={Logo}
                 alt="Kartavya Logo"
-                className="w-[80%] sm:w-[60%] lg:w-auto object-contain drop-shadow-md"
+                className="w-[80%] sm:w-[60%] lg:w-auto object-contain drop-shadow-md pointer-events-none"
               />
             </Link>
             <p className="text-2xl text-left font-semibold">

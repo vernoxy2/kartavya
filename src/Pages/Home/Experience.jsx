@@ -13,7 +13,7 @@ const Experience = () => {
           </p>
         </div>
         <div>
-          <img src={Experienceimg} alt="" className="w-full object-contain" />
+          <img src={Experienceimg} alt="" className="w-full object-contain pointer-events-none" />
         </div>
       </div>
     </section>

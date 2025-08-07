@@ -10,12 +10,12 @@ const Weare = () => {
       <h1 className="text-4xl md:text-6xl font-bold text-primary">
         Who We Are
       </h1>
-      <div className="bg-primary w-full lg:w-[48%] h-24 z-0 absolute top-52 sm:top-72 lg:top-1/3"></div>
-      <img src={WeareImg2} alt="" className="absolute -top-10 sm:-top-24 z-0 h-[20%] sm:h-auto" />
-      <img src={WeareImg3} alt="" className="absolute right-0 md:-bottom-44 -bottom-20   z-0 h-[12%] sm:h-auto" />
+      <div className="bg-primary w-full lg:w-[48%] h-24 z-0 absolute top-52 sm:top-72 lg:top-1/3 "></div>
+      <img src={WeareImg2} alt="" className="absolute -top-10 sm:-top-24 z-0 h-[20%] sm:h-auto pointer-events-none" />
+      <img src={WeareImg3} alt="" className="absolute right-0 md:-bottom-44 -bottom-20   z-0 h-[12%] sm:h-auto pointer-events-none" />
       <div className="container grid grid-cols-1 lg:grid-cols-2 sm:gap-y-8 z-10">
         <div className="z-10"> 
-          <img src={WeareImg} alt="Weare" className="h-full object-contain p-8 sm:p-0 mx-auto z-10" />
+          <img src={WeareImg} alt="Weare" className="h-full object-contain p-8 sm:p-0 mx-auto z-10 pointer-events-none" />
         </div>
         <div className="flex flex-col space-y-4 sm:space-y-10 justify-center items-center lg:items-left text-center lg:text-right z-10">
           <h1 className="text-2xl md:text-4xl font-bold text-primary z-10">

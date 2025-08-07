@@ -36,7 +36,7 @@ const Barcode = () => {
         </div>
         {/* Image section */}
         <div className="flex items-center justify-center">
-          <img src={BarcodeImg} alt="" className=" mx-auto lg:ms-auto" />
+          <img src={BarcodeImg} alt="" className=" mx-auto lg:ms-auto pointer-events-none" />
         </div>
       </div>
       <PrimaryBtn className="bg-primary text-white">View More</PrimaryBtn>

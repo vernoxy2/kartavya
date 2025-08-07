@@ -10,7 +10,7 @@ const Printed = () => {
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Image section */}
         <div className="flex items-center justify-center">
-          <img src={PrintedImg} alt="" className="w-full" />
+          <img src={PrintedImg} alt="" className="w-full pointer-events-none" />
         </div>
         {/* Text section */}
         <div className="text-end space-y-4 md:space-y-8 flex flex-col justify-center">

@@ -63,7 +63,7 @@ const Machines = () => {
             <img
               src={item.img}
               alt={item.name}
-              className=" object-contain"
+              className=" object-contain pointer-events-none"
             />
             <div className="p-5 text-start group-hover:text-white duration-300 relative">
               <div className="bg-white gh p-1 text-6xl flex items-center justify-center -mt-12 w-20 h-20 ml-auto text-primary shadow-lg">

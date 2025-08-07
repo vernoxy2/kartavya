@@ -21,7 +21,7 @@ const HomeHeader = () => {
         </div>
         {/* Right image section */}
         <div className="md:w-5/12 ">
-          <img src={Header} alt="Header" className="w-full object-contain"/></div>
+          <img src={Header} alt="Header" className="w-full object-contain pointer-events-none"/></div>
       </div>
     </div>
   );

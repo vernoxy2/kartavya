@@ -53,8 +53,8 @@ const List = [
 const Delivering = () => {
   return (
     <section className="py-8 sm:py-12 space-y-6 md:space-y-16 relative">
-      <img src={DeliveringBg} alt=""  className="absolute left-0 -top-20 sm:top-12 h-52 lg:h-auto z-0"/>
-      <img src={DeliveringBg2} alt=""  className="absolute right-0 -top-20 sm:-top-28 h-52 lg:h-auto z-0"/>
+      <img src={DeliveringBg} alt=""  className="absolute left-0 -top-20 sm:top-12 h-52 lg:h-auto z-0 pointer-events-none"/>
+      <img src={DeliveringBg2} alt=""  className="absolute right-0 -top-20 sm:-top-28 h-52 lg:h-auto z-0 pointer-events-none"/>
       <div className="flex flex-col gap-y-9 container">
         {/* header section */}
         <h1 className="text-3   xl md:text-6xl font-bold text-primary">

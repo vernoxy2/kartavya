@@ -25,7 +25,7 @@ const Businesses = () => {
             <img
               src={Experience}
               alt=""
-              className="group-hover:scale-105 duration-300 h-[40%]"
+              className="group-hover:scale-105 duration-300 h-[40%] pointer-events-none"
             />
             <h1 className="text-secondary group-hover:text-primary duration-300 font-semibold text-2xl md:text-3xl">
               10+ Years of Industry Experience
@@ -35,7 +35,7 @@ const Businesses = () => {
             <img
               src={PANindia}
               alt=""
-              className="group-hover:scale-105 duration-300 h-[40%]"
+              className="group-hover:scale-105 duration-300 h-[40%] pointer-events-none"
             />
             <h1 className="text-secondary group-hover:text-primary duration-300 font-semibold text-2xl md:text-3xl">
               PAN India Supply Network
@@ -44,11 +44,11 @@ const Businesses = () => {
         </div>
         {/* Right Image */}
         <div className="lg:w-6/12 flex items-center justify-center">
-          <img src={Circle2} alt="Roll" className="fastspin object-contain" />
-          <img src={Circle1} className="absolute Rspin" alt="" />
+          <img src={Circle2} alt="Roll" className="fastspin object-contain pointer-events-none" />
+          <img src={Circle1} className="absolute Rspin pointer-events-none" alt="" />
           <img
             src={roll}
-            className="absolute scale-105 hover:scale-125 duration-300 hover:-rotate-12 spin"
+            className="absolute scale-105 hover:scale-125 duration-300 hover:-rotate-12 spin pointer-events-none"
             alt=""
           />
         </div>
@@ -57,7 +57,7 @@ const Businesses = () => {
             <img
               src={Support}
               alt=""
-              className="group-hover:scale-105 duration-300 h-[40%]"
+              className="group-hover:scale-105 duration-300 h-[40%] pointer-events-none"
             />
             <h1 className="text-secondary group-hover:text-primary duration-300 font-semibold text-2xl md:text-3xl">
               Dedicated Client Support
@@ -67,7 +67,7 @@ const Businesses = () => {
             <img
               src={Delivery}
               alt=""
-              className="group-hover:scale-105 duration-300 h-[40%]"
+              className="group-hover:scale-105 duration-300 h-[40%] pointer-events-none"
             />
             <h1 className="text-secondary group-hover:text-primary duration-300 font-semibold text-2xl md:text-3xl">
               Quick Sampling & Fast Delivery
@@ -81,7 +81,7 @@ const Businesses = () => {
             <img
               src={Range}
               alt=""
-              className="group-hover:scale-105 duration-300 h-[40%]"
+              className="group-hover:scale-105 duration-300 h-[40%] pointer-events-none"
             />
             <h1 className="text-secondary group-hover:text-primary duration-300 font-semibold text-2xl md:text-3xl">
               Wide Range of <br /> Labels & Ribbons
@@ -91,7 +91,7 @@ const Businesses = () => {
             <img
               src={Customization}
               alt=""
-              className="group-hover:scale-105 duration-300 h-[40%]"
+              className="group-hover:scale-105 duration-300 h-[40%] pointer-events-none"
             />
             <h1 className="text-secondary group-hover:text-primary duration-300 font-semibold text-2xl md:text-3xl">
               Customization Based <br /> on Application

@@ -36,7 +36,7 @@ const TTR = () => {
           </div>
         </div>
         {/* Image section */}
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center pointer-events-none">
           <img src={TTRImg} alt="" />
         </div>
       </div>
