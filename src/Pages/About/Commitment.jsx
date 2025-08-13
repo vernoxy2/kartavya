@@ -40,7 +40,7 @@ const Commitment = () => {
       <SaidHeading>
         Our Commitment{" "}
         <span>
-          <FaHandshake className="text-6xl my-auto" />
+          <FaHandshake className="hidden md:block text-6xl my-auto" />
         </span>
       </SaidHeading>
       <div data-aos="fade-up" className="space-y-4">
