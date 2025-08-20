@@ -17,7 +17,7 @@ const HomePage = () => {
       <Experience />
       <WeServe />
       <Delivering />
-      <Clients />
+      {/* <Clients /> */}
       <ContactUs />
     </div>
   );
