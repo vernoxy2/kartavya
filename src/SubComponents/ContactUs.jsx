@@ -31,7 +31,7 @@ const ContactUs = () => {
             </p>
             <PrimaryBtn
               onClick={() => {
-                window.scrollTo({ top: 0, behavior: "instant" });
+                window.scrollTo({ top: 0, behavior: "smooth", block: "start" });
                 navigate("/contact");
               }}
               className="bg-primary text-white"

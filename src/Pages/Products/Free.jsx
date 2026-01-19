@@ -1,6 +1,7 @@
 import React from "react";
 import Bg from "../../assets/ProductsImgs/FreeImg.webp";
 import PrimaryBtn from "../../SubComponents/PrimaryBtn";
+import { useNavigate } from "react-router-dom";
 
 const style = {
   backgroundImage: `url(${Bg})`,
@@ -10,6 +11,7 @@ const style = {
 };
 
 const Free = () => {
+  const navigate = useNavigate();
   return (
     <section
       style={style}
@@ -26,7 +28,10 @@ const Free = () => {
               <br className="hidden 2xl:block" /> ribbon before placing bulk
               order.
             </p>
-            <PrimaryBtn className="bg-primary text-white">
+            <PrimaryBtn onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth",  });
+                navigate("/contact");
+              }} className="bg-primary text-white">
               Get a Quote
             </PrimaryBtn>
           </div>

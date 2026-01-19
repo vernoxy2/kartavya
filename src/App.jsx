@@ -15,7 +15,8 @@ import "aos/dist/aos.css"; // Ensure AOS styles are imported
 const App = () => {
   useEffect(() => {
     Aos.init({ duration: 1000,
-      delay: 200
+      delay: 200,
+      once: true
      });
   }, []);
 
