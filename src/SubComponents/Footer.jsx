@@ -46,7 +46,7 @@ const Footer = () => {
   return (
     <section
       data-aos="fade"
-      className="relative space-y-4 py-20 bg-primary text-white overflow-hidden"
+      className="relative space-y-4 py-20 pb-5 bg-primary text-white overflow-hidden"
     >
       <img
         src={OnlyLogo}
@@ -118,7 +118,7 @@ const Footer = () => {
                 >
                   {item.name}
                 </p>
-              )
+              ),
             )}
           </div>
 
@@ -145,6 +145,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <hr />
+      <p className="text-center  text-white/80  mt-auto">
+        © {new Date().getFullYear()} Developed by <a href="https://www.vernoxy.com/" target="_blank">@Vernoxy</a>
+      </p>
     </section>
   );
 };
